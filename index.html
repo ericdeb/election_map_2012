@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html style="background-color: #545454">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<title>Election Map</title>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="raphael.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="state.js"></script>
+		<script type="text/javascript" src="paper2.js"></script>
+		<script type="text/javascript" src="paper_script.js"></script>
+		<script type="text/javascript" src="letSegPath.js"></script>
+		<script type="text/javascript" src="staticText.js"></script>
+		<style type="text/css">
+			*  {
+				color: white; font-family: 'trebuchet ms';
+			}
+
+			div {
+				position:absolute;
+			}
+
+			#bot span { font-family: "Times";}
+		</style>
+	</head>
+	<body style="background-color: #545454">
+
+		<div style="position:absolute; left:100px; top:40px;">
+			<canvas id="myCanvas" style="background:#545454;" width="800" height="500"></canvas>
+		</div>
+
+		<div id="map" style="display:none">
+
+			<div id="pageTitle" style=" font-size: 44px; font-weight: bold; left: 410px; top: 15px; width: 500px; z-index: 1;"><span>Election Map</span></div>
+
+			<div id="raphael_canvas" style="border: none"></div>
+			<div id="stateInfo" style="left: 950px; top: 250px; width: 200px;"><span id="title" style="font-size:25px"></span><br /><br /><span id="content" style="font-size:16px"></span></div>
+
+			<div id="bot" style="top: 640px; left:630px; width:300px;">
+				<span style="font-size:20px">Credits</span><br />
+				<span style="font-size:14px">Map colors from <a href="http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/president/" target="_blank">Washington Post</a></span> <br />
+				<span style="font-size:14px">Original Static USA image from <a href="http://en.wikipedia.org/wiki/File:Blank_US_Map.svg" target="_blank">Wikipedia</a></span>
+			</div>
+
+		</div>
+
+	</body>
+</html>
+
